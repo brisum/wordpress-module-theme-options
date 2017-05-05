@@ -1,0 +1,19 @@
+{
+  "name": "brisum/wordpress-module-theme-options",
+  "description": "Wordpress module theme options",
+  "keywords": [
+    "wordpress"
+  ],
+  "homepage": "https://github.com/brisum/wordpress-module-theme-options",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Oleksandr Manchenko",
+      "email": "omanchenko@brisum.com",
+      "homepage": "http://brisum.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {}
+  }
+}
