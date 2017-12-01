@@ -1,23 +1,21 @@
 <?php
-defined('ABSPATH') OR exit;
 
-class OptionsManagerSettingsPage
+namespace Brisum\Wordpress\ThemeOptions\Admin\Page;
+
+class OptionsManager
 {
     private $dir;
-    private $file;
     private $assets_dir;
     private $assets_url;
     private $settings_base;
-    private $settings;
     private $wp_vital_options;
     private $wp_default_options;
 
-    public function __construct($file)
+    public function __construct($assetsDir, $assetsUrl)
     {
-        $this->file = $file;
-        $this->dir = dirname($this->file);
-        $this->assets_dir = ABSPATH . 'component-manager/asset/plugin/theme-options/assets/';
-        $this->assets_url = '/component-manager/asset/plugin/theme-options/assets/';
+        $this->dir = dirname(__FILE__);
+        $this->assets_dir = $assetsDir;
+        $this->assets_url = $assetsUrl;
         $this->settings_base = 'cn_';
         $this->wp_vital_options = array(
             'siteurl',
